@@ -1,0 +1,103 @@
+.ontario-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f8f9fa; /* Light background for the whole component */
+}
+
+.status-card,
+.detail-card,
+.message-card {
+  width: 90%;
+  background-color: #fff3cd; /* Light yellow background for cards */
+  border: 1px solid #ffc107; /* Yellow border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px; /* Adjusted margin-bottom */
+  padding: 12px; /* Adjusted padding */
+}
+
+.status-card h2,
+.detail-card h2,
+.message-card h2 {
+  font-size: 1.2rem; /* Slightly smaller font size */
+  margin-bottom: 8px; /* Adjusted margin-bottom */
+  color: #333; /* Dark text for headings */
+  font-weight: bold;
+}
+
+.status-card p,
+.detail-card p,
+.message-card p {
+  font-size: 1rem;
+  color: #333; /* Dark text for paragraphs */
+}
+
+.summary-list {
+  width: 90%;
+  background-color: #e9ecef; /* Light gray background for the summary list */
+  border-radius: 8px;
+  padding: 8px; /* Reduced padding */
+  margin-top: 8px; /* Reduced margin-top */
+  max-height: 150px; /* Reduced maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+}
+
+.summary-list h2 {
+  font-size: 1.2rem; /* Adjusted font size */
+  margin-bottom: 8px; /* Adjusted margin-bottom */
+  color: #333; /* Dark text for headings */
+  font-weight: bold;
+}
+
+.summary-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-list li {
+  background-color: #f8f9fa; /* Slightly lighter gray for list items */
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.summary-list li:hover {
+  background-color: #ced4da; /* Darker gray on hover */
+}
+
+.message-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-top: 8px; /* Reduced margin-top */
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.message-input button {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Smaller font size */
+  transition: background-color 0.3s;
+}
+
+.message-input button:hover {
+  background-color: #0056b3;
+}

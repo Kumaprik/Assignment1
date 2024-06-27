@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Canada Summary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Key COVID-19 Updates -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>COVID-19 KEY UPDATES</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Total Cases: {{covidUpdates.totalcases}}</p>
+      <p>Total Deaths: {{covidUpdates.numdeaths}}</p>
+      <p>Cases in Last 7 Days: {{covidUpdates.numtotal_last7}}</p>
+      <p>Deaths in Last 7 Days: {{covidUpdates.numdeaths_last7}}</p>
+      <p>Cases in Last 14 Days: {{covidUpdates.numtotal_last14}}</p>
+      <p>Deaths in Last 14 Days: {{covidUpdates.numdeaths_last14}}</p>
+      <p>Average Cases in Last 7 Days: {{covidUpdates.avgcases_last7}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Ontario Status of Cases -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ONTARIO STATUS OF CASES</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Total Cases: {{ontarioStatus.totalcases}}</p>
+      <p>Resolved: {{ontarioStatus.resolved}}</p>
+      <p>Deaths: {{ontarioStatus.deaths}}</p>
+      <p>Hospitalized: {{ontarioStatus.hospitalized}}</p>
+      <p>ICU: {{ontarioStatus.icu}}</p>
+      <p>Ventilator: {{ontarioStatus.ventilator}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

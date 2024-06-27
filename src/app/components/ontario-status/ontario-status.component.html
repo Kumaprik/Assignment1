@@ -1,0 +1,25 @@
+<div class="ontario-status-container">
+  <div class="status-card">
+    <h2>ONTARIO STATUS OF CASES</h2>
+    <p>Total Cases: {{ ontarioStatus.totalcases }}</p>
+    <p>Resolved: {{ ontarioStatus.resolved }}</p>
+    <p>Deaths: {{ ontarioStatus.deaths }}</p>
+    <p>Hospitalized: {{ ontarioStatus.hospitalized }}</p>
+    <p>ICU: {{ ontarioStatus.icu }}</p>
+    <p>Ventilator: {{ ontarioStatus.ventilator }}</p>
+  </div>
+
+  <div class="message-card" *ngIf="followUpMessage">
+    <h2>Follow Up Message</h2>
+    <p>{{ followUpMessage }}</p>
+  </div>
+
+  <div class="summary-list">
+    <h2>SUMMARY OF TOTAL DOSES ADMINISTERED</h2>
+    <ul>
+      <li *ngFor="let record of records" (click)="onSelectRecord(record)">
+        Report Date: {{ record.report_date }}
+      </li>
+    </ul>
+  </div>
+</div>

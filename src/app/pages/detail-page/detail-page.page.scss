@@ -1,0 +1,65 @@
+/* src/app/pages/detail-page/detail-page.page.scss */
+
+ion-header, ion-toolbar, ion-title, ion-content, ion-card, ion-card-header, ion-card-title, ion-card-content, ion-item, ion-input, ion-button {
+    --background: #f5f5f5; /* Light background for the entire content */
+    --color: #333; /* Dark text color for readability */
+  }
+  
+  ion-toolbar {
+    --background: #007bff; /* Blue toolbar background */
+  }
+  
+  ion-title {
+    color: #fff; /* White title color */
+  }
+  
+  ion-card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White card background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0; /* Light grey border */
+  }
+  
+  ion-card-title {
+    color: #007bff; /* Blue text color for better readability */
+    font-weight: bold; /* Bold headings */
+  }
+  
+  ion-card-content p {
+    color: #333; /* Dark text color for paragraphs */
+  }
+  
+  ion-item {
+    margin: 20px;
+    --background: transparent;
+  }
+  
+  ion-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #f5f5f5; /* Light grey input background */
+    color: #333; /* Dark text color */
+  }
+  
+  ion-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Primary button color */
+    color: #150707; /* White text color */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  ion-button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  

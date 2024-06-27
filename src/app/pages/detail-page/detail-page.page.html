@@ -1,0 +1,40 @@
+<!-- src/app/pages/detail-page/detail-page.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>COVID-19 Vaccine Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ONTARIO STATUS OF CASES</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Total Cases: {{ record.totalcases }}</p>
+      <p>Resolved: {{ record.resolved }}</p>
+      <p>Deaths: {{ record.deaths }}</p>
+      <p>Hospitalized: {{ record.hospitalized }}</p>
+      <p>ICU: {{ record.icu }}</p>
+      <p>Ventilator: {{ record.ventilator }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>DETAIL DATA</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Report Date: {{ record.report_date }}</p>
+      <p>Previous Day Doses Administered: {{ record.previous_day_total_doses_administered }}</p>
+      <p>Total Doses Administered: {{ record.total_doses_administered }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="followUpMessage" placeholder="Enter Follow Up Message"></ion-input>
+    <ion-button (click)="sendMessage(followUpMessage)">Send Message</ion-button>
+  </ion-item>
+
+  <ion-button (click)="goBack()">Back</ion-button>
+</ion-content>
